@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: navajowhite;
+}
+
+#navbar{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar a{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7rem;
+    color: white;
+    text-decoration: none; 
+    margin-right: 2rem;
+    border-bottom: 2px solid transparent;
+}
+
+#navbar a:hover{
+    border-bottom: 2px solid white;
+}
+
+#tela-prn{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../imagens/pizza-img-prn.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:800px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 5rem;
+}
+
+#tela-prn .title{
+    height: 100%;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-prn .title h1{
+    color: white;
+    font-size: 6rem;
+}
+
+#tela-prn .title p{
+    font-size: 2rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+main .imagens{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 3rem;
+    color: green;
+}
+main .imagens .card{
+    border-radius: 8px;
+    padding:1.5rem;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.4);
+    margin: 2rem;
+    border: 3px solid green;
+}
+
+main .imagens .card:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main .imagens .card img{
+    border-radius: 8px;
+    width: 200px;
+    height: 160px;
+}
+
+main .imagens .card img:hover{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+main .imagens .card p{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+main .imagens .card button{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    color: white;
+    background-color: green;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+main .imagens .card button:hover{
+    background-color: red;
+}
+
+main #sobre{
+    margin: 5rem 0;
+    width: 90%;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+}
+
+main #sobre main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    padding: 0 3rem;
+}
+
+main #sobre h2{
+    color: green;
+    font-size: 3em;
+    text-align: center;
+    margin: 2rem;
+}
+
+main #sobre img{
+    width: 90%;
+    height: 90%;
+    border-radius: 18px;
+    margin-bottom: 2rem;
+}
+
+main #sobre p{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main #loca{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+main #loca h2{
+    font-size: 3rem;
+
+}
+
+main #loca h3{
+    font-size: 2rem;
+
+}
+main #loca p{
+    font-size: 1.5rem;
+}
+
+main #loca img{
+    width: 2rem;
+    height: 2rem;
+}
+
+main #entre-contato{
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+main #entre-contato h2{
+    color: green;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+main #entre-contato h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main #entre-contato input[type=text], input[type=email], input[type=textarea]{
+    outline-color: green;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+main #entre-contato button{
+    margin-top: 1rem;
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+
+}
+
+main #entre-contato button:hover{
+    background-color: red;
+}
+
+body main #cont{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    height: 2.5rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+body main #cont a{
+    text-decoration: none;
+    color: white;
+}
+
+body main #cont:hover{
+    background-color: red;
+}
