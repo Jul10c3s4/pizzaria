@@ -267,6 +267,9 @@ body main #cont{
     text-decoration: none;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body main #cont:hover{
