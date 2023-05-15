@@ -263,9 +263,9 @@ body main #cont{
     border-radius: 30px;
 }
 
-body main #cont a{
+body main #cont{
     text-decoration: none;
-    color: red;
+    color: white;
     text-align: center;
 }
 
