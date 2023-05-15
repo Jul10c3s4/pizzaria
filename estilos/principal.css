@@ -139,7 +139,7 @@ main #sobre{
     border-radius: 18px;
 }
 
-main #sobre main{
+main #sobre .main-sobre{
     width: 100%;
     display: flex;
     flex-direction: column;
