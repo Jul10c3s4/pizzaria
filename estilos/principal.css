@@ -10,6 +10,9 @@ body{
     background-color: navajowhite;
 }
 
+.stop{
+    overflow: hidden;
+}
 
 body main #tela-prn .navbar-mobile{
     color: white;
@@ -20,19 +23,10 @@ body main #tela-prn .navbar-mobile{
     z-index: 3;
 }
 
-
-body main #tela-prn .navbar-mobile nav{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-}
-
 body main #tela-prn .navbar-mobile #sair{
     font-size: 25px;
     margin-top: 0.8rem;
+    margin-bottom:3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -47,8 +41,19 @@ body main #tela-prn .navbar-mobile #x{
     
 }
 
+body main #tela-prn .navbar-mobile nav{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body main #tela-prn .navbar-mobile a{
-    margin-bottom: 6rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
     transition: all 1s;
     font-weight: 500;
     font-size: 20px;
@@ -56,7 +61,17 @@ body main #tela-prn .navbar-mobile a{
     margin-top: 0.7rem;
     color: white;
     text-decoration: none; 
-    border-bottom: 2px solid transparent;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+body main #tela-prn .navbar-mobile a:hover{
+    background-color: white;
+    color: black;
+    
 }
 
 .open{

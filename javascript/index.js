@@ -19,14 +19,26 @@ function entreContato(){
     }
 }
 
+let navMobile = document.querySelector('.navbar-mobile')
+
+let body = document.querySelector('body')
 function showMenu(){
-    let navMobile = document.querySelector('.navbar-mobile')
-    let body = document.querySelector('body')
-    body.click
 
     if (navMobile.classList.contains('open')) {
         navMobile.classList.remove('open')
+        body.classList.add('stop')
     }else{
+        body.classList.remove('stop')
         navMobile.classList.add('open')
     }
 }
+
+document.addEventListener("click" ,function (e){
+    if(e.target.getAttribute('id') == "log"){
+        navMobile.classList.add('open')
+    }
+    if( e.target.getAttribute('id')== "sab" | e.target.getAttribute('id') == "loc" | e.target.getAttribute('id') == 'sob' | e.target.getAttribute('class') == 'title'){
+        navMobile.classList.add('open')
+        body.classList.remove('stop')
+    }
+})
