@@ -33,7 +33,14 @@ function showMenu(){
     }
 }
 
+document.addEventListener('scroll', function(e){
+    let width = window.innerWidth
+    if (width > 450) {
+        body.classList.remove('stop')
+    }
+})
 document.addEventListener("click" ,function (e){
+    console.log(width);
     if(e.target.getAttribute('id') == "log"){
         navMobile.classList.add('open')
     }
