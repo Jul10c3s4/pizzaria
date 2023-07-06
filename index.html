@@ -10,14 +10,30 @@
 </head>
 <body>
     <main>
-        <a id="cont" href="#entre-contato">Entrar em contato</a>
+        <div id="div-cont">
+            <a id="cont" href="#entre-contato">Entrar em contato</a>
+        </div>
         <div id="tela-prn">
+            <div class="navbar-mobile">
+                <div id="sair">
+                    <p>Menu</p>
+                    <img id="x" src="./imagens/x.png" onclick="showMenu()" alt="">
+                </div>
+                    <nav>
+                        <a href="logar.html">Logar</a>
+                        <a href="#sabores">Sabores</a>
+                        <a href="#loca">Localização</a>
+                        <a href="#sobre">Sobre</a>
+                    </nav>
+            </div>
             <div id="navbar">
-                    <a href="logar.html">fgg</a>
-                    <a href="logar.html">Logar</a>
-                    <a href="#sabores">Sabores</a>
-                    <a href="#loca">Localização</a>
-                    <a href="#sobre">Sobre</a>
+                <img id="menu" src="./imagens/menu.png" onclick="showMenu()" alt="">
+                    <nav>
+                        <a href="logar.html">Logar</a>
+                        <a href="#sabores">Sabores</a>
+                        <a href="#loca">Localização</a>
+                        <a href="#sobre">Sobre</a>
+                    </nav>
             </div> 
             <div class="title">
                 <h1>I love pizza</h1>
@@ -86,7 +102,7 @@
             <input type="text" id="telefone" name="telefone" placeholder="insira seu telefone...">
             <input type="text" id="cep" name="cep" placeholder="insira seu cep...">
             <input type="text" id="mensagem" name="mensagem" placeholder="insira sua dúvida...">
-            <button>Enviar</button>          
+            <button type="submit" onclick="entreContato()">Enviar</button>          
         </article>
         <article id="loca">
             <h2>Localização <span><img src="./imagens/tool.png" alt=""></span></h2>
@@ -94,8 +110,6 @@
             <p>Arapiraca-AL, Povoado Pau D'arco, Rua Josue Messias</p>            
         </article>
     </main>
-
-    
-    
+<script src="./javascript/index.js"></script>    
 </body>
 </html>
