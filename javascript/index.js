@@ -36,6 +36,7 @@ function showMenu(){
 document.addEventListener('mousemove', function(e){
     let width = window.innerWidth
     if (width > 450) {
+        console.log('ffg');
         body.classList.remove('stop')
     }
 })
